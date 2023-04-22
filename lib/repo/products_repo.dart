@@ -1,10 +1,9 @@
 import 'dart:convert';
-import 'dart:developer';
 
 import 'package:dartz/dartz.dart';
 import 'package:http/http.dart' as http;
-import 'package:pagination_in_flutter/model/error_model.dart';
-import 'package:pagination_in_flutter/model/product_list_model.dart';
+import 'package:pagination_in_flutter/models/error_model.dart';
+import 'package:pagination_in_flutter/models/product_list_model.dart';
 
 class ProductRepo {
   static Future<Either<Failure, ProductsListModel>> getProducts(
@@ -24,7 +23,6 @@ class ProductRepo {
         return const Left(Failure(message: 'Failed to parse json response'));
       }
     } catch (e) {
-      log(e.toString());
       return const Left(Failure(message: 'Something went wrong'));
     }
   }

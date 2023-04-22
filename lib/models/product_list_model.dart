@@ -1,4 +1,4 @@
-import 'package:pagination_in_flutter/model/product_model.dart';
+import 'package:pagination_in_flutter/models/product_model.dart';
 
 class ProductsListModel {
   final List<ProductModel> products;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pagination_in_flutter/model/product_model.dart';
+import 'package:pagination_in_flutter/models/product_model.dart';
 import 'package:pagination_in_flutter/presentation/blocs/products_bloc.dart';
 
 /*

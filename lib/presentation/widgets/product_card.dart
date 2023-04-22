@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:pagination_in_flutter/colors.dart';
-import 'package:pagination_in_flutter/model/product_model.dart';
+import 'package:pagination_in_flutter/models/product_model.dart';
 
 class ProductCard extends StatelessWidget {
   final ProductModel product;
